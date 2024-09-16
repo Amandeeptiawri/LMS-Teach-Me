@@ -1,5 +1,6 @@
 import React from 'react'
 import Button from './Button'
+import { Link } from 'react-router-dom'
 
 
 
@@ -17,7 +18,7 @@ const Banner1 = () => {
         </h1>
         <h6 className="card-text text-color font-weight-normal mb-auto ">
         High-quality, affordable education accessible to all learners seeking excellence without financial burden, ensuring accessibility and excellence.        </h6>
-       <div className='mt-4'>   <Button   content="Learn More"></Button></div>
+       <div className='mt-4'>  <Link to="/about">  <Button   content="Learn More"></Button></Link> </div>
      
       </div>
       <img

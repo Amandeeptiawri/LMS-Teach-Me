@@ -18,7 +18,7 @@ const BlogsList = () => {
      
 
       <div className="col-lg-2 col-12 my-4">
-      <Link  to="/Blogs">
+      <Link  to="/blog">
     <Button content="See All Blogs"></Button>
       
   </Link>
