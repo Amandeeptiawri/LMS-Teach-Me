@@ -6,6 +6,8 @@ import Ourcoursesmain from '../Allcourses/Ourcoursesmain';
 import TeachersList from '../TeachersList';
 import BrandSlider from '../BrandSlider';
 import TestimonialSlider from '../Testimaonal';
+import BlogsList from '../BlogsList';
+
 
 function Home() {
   return (
@@ -16,6 +18,7 @@ function Home() {
   <TeachersList></TeachersList>
   <BrandSlider></BrandSlider>
   <TestimonialSlider></TestimonialSlider>
+  <BlogsList></BlogsList>
    
     
     </>
