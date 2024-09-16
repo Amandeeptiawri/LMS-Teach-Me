@@ -1,9 +1,7 @@
-// import { Header } from "./Components/LandingPage/Header";
-// import Banner1 from "./Components/Banner1";
-// import Ourcoursesmain from "./Components/Allcourses/Ourcoursesmain";
-// import CourseCard from "./Components/Allcourses/CourseCard";
+import React, { useState, useEffect } from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import Loader from './Components/Loader';  // Import your loader component
 import Home from './Components/LandingPage/Home';
 import Layout from './Layout';
 import About from './Components/About';
@@ -18,36 +16,49 @@ import Login from './Components/Login';
 import SignUp from './Components/SignUp';
 import Blog from './Components/Blog';
 
-
-
-
 function App() {
+  const [loading, setLoading] = useState(true);
+  const location = useLocation();
+
+  // Handle the loader for each route change
+  useEffect(() => {
+    setLoading(true);
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 1000); // Simulate loading delay for 1 second
+    return () => clearTimeout(timer);
+  }, [location]);
+
   return (
-   
-    <Router>
-    <Routes>
-      <Route path="/" element={<Layout/>}>
-        <Route  index element={<Home/>} />
-        <Route path="/about" element={<About/>} />
-        <Route path="/courses" element={<Courses/>} />
-        <Route path="/course-detail" element={<CourseDetails/>} />
-        <Route path="/cart" element={<Cart/>} />
-        <Route path="/checkout" element={<CheckoutCart/>} />
-        <Route path="/teacher" element={<Teacher/>} />
-        <Route path="/teach-with-us" element={<TeachWithUs/>} />
-        <Route path="/contact" element={<Contact/>} />
-        <Route path="/login" element={<Login/>} />
-        <Route path="/signup" element={<SignUp/>} />
-        <Route path="/blog" element={<Blog/>} />
-        
-        
-        
-
-      </Route>
-    </Routes>
-  </Router> 
-
+    <>
+      {loading ? (
+        <Loader />  // Show the loader when loading state is true
+      ) : (
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/courses" element={<Courses />} />
+            <Route path="/course-detail" element={<CourseDetails />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="/checkout" element={<CheckoutCart />} />
+            <Route path="/teacher" element={<Teacher />} />
+            <Route path="/teach-with-us" element={<TeachWithUs />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/signup" element={<SignUp />} />
+            <Route path="/blog" element={<Blog />} />
+          </Route>
+        </Routes>
+      )}
+    </>
   );
 }
 
-export default App;
+export default function WrappedApp() {
+  return (
+    <Router>
+      <App />
+    </Router>
+  );
+}

@@ -307,6 +307,7 @@ padding: 0%;
 
   .banner-right img{
     max-width: 100%;
+    height: unset;
     object-fit: fill;
 
   }
