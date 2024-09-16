@@ -1,37 +1,16 @@
 import React from 'react';
 import './Loader.css'; // Make sure to create and import your CSS file
-
+{/*  This is Preloader */}
 const Loader = () => {
   return (
-    <div >
-    <div id="preloader" style="display: none;">
-    <div class="book">
-        <div class="inner">
-            <div class="left"></div>
-            <div class="middle"></div>
-            <div class="right"></div>
-        </div>
-        <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-        </ul>
-    </div>
+    <div className='load'>
+    <div className="book">
+	<div className="book__pg-shadow"></div>
+	<div className="book__pg"></div>
+	<div className="book__pg book__pg--2"></div>
+	<div className="book__pg book__pg--3"></div>
+	<div className="book__pg book__pg--4"></div>
+	<div className="book__pg book__pg--5"></div>
 </div>
     </div>
   );
