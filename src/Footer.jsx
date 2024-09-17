@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Row, div, Form, Button } from "react-bootstrap";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 import { FaInstagram, FaTwitter, FaLinkedin, FaPhoneAlt, FaEnvelope } from "react-icons/fa";
 
@@ -14,10 +15,9 @@ const Footer = () => {
 
      <div className="row">
        <div className="col-lg-3 col-12 pb-5">
-       <img src="https://uiparadox.co.uk/templates/teach-me/assets/media/logo.png" className="img-fluid" alt="Responsive image pb-4"></img>
+       <img src="https://uiparadox.co.uk/templates/teach-me/assets/media/logo.png" className="img-fluid mb-2" alt="Responsive image pb-4"></img>
          <p className="wrap text-white">
-           Lorem ipsum dolor sit amet consectetur. Velit interdum tellus
-           elit diam amet eleifend suspendisse.
+         LMS portal delivers a comprehensive learning experience with interactive courses and real-world projects.
          </p>
          <h6 className="text-white">Follow Us!</h6>
          <div className="d-flex">
@@ -42,12 +42,13 @@ const Footer = () => {
        <div className="col-lg-3 col-md-4 col-6 " >
          <h5 className="text-uppercase pb-3">Quick Links</h5>
          <ul className="list-unstyled">
-           <li>Home Page</li>
-           <li>About Us</li>
-           <li>Courses</li>
-           <li>Signup</li>
-           <li>Login</li>
-           <li>Contact</li>
+         
+         <Link to='/'>   <li>Home Page</li></Link>
+          <Link to="/about">  <li>About Us</li></Link>
+          <Link to="/courses">  <li>Courses</li></Link>
+          <Link to="/signup">  <li>Signup</li></Link>
+          <Link to="/login">  <li>Login</li></Link>
+          <Link to="/contact">  <li>Contact</li></Link>
          </ul>
        </div>
 

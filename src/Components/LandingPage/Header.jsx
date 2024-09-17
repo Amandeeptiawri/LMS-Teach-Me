@@ -27,9 +27,7 @@ export const Header = () => {
                     We've amazing Skills for <span className='position-relative'><img className="img-fluid position-absolute bottom-0" src="https://uiparadox.co.uk/templates/teach-me/assets/media/vector/underline.png" alt="" />Teaching</span>
                   </h1>
                   <p className='mt-3' style={{ color: "#fff" }}>
-                    Lorem ipsum dolor sit amet consectetur. Ut ullamcorper sit
-                    adipiscing sagittis mi nisl risus. Eget ultrices risus magna
-                    hendrerit tortor.
+                  Elevate online education with our advanced LMS portal, offering seamless course management and personalized learning experiences. Empower learners with intuitive access to interactive content and flexible study options. Redefine education with a platform built for excellence.
                   </p>
                   <div className='baner-buton mt-5 d-flex gap-3 '>
                      

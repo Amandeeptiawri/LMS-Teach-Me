@@ -94,8 +94,8 @@ const CourseDetails = () => {
                                 <h2 className="card-title font-weight-bold ">$120.00</h2>
 
                                 <div className='buttons py-1 d-flex flex-column'>
-                                    <button type="button  " className="btn btn-primary btn-lg">Large button</button>
-                                    <button type="button " className="btn btn-secondary btn-lg">Large button</button>
+                                    <button type="button  " className="btn btn-primary btn-lg mb-2">Add to Cart</button>
+                                    <button type="button " className="btn btn-secondary btn-lg">Buy Now</button>
                                     <h6 className='text-center pt-2' style={{ fontFamily: 'sans-serif', letterSpacing: '1px', color: 'dark-grey' }}>
                                         <small>30-Day Money-Back Guarantee</small> </h6>
                                 </div>

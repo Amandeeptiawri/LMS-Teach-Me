@@ -2,11 +2,12 @@ import HeaderComponent from '../Components/page_header/HeaderComponent';
 import './LoginSignup.css';
 
 import { FaGoogle, FaFacebook, FaEnvelope, FaLock, FaUser } from "react-icons/fa";
+import { AiTwotoneMail } from "react-icons/ai";
 
 const SignUp = () => {
   return (
     <>
-    <HeaderComponent item1='register'></HeaderComponent>
+    <HeaderComponent item1='Sign up'></HeaderComponent>
 
     {/* login signup forms */}
 
@@ -20,7 +21,7 @@ const SignUp = () => {
     <p className="text-center mb-4" style={{color:'#92949F'}}>Please Enter your detail to Sign In.</p>
     <div className="d-flex justify-content-center mb-3">
       <button className="btn google-btn me-2 w-100">
-        <FaGoogle /> Login with Google
+      <AiTwotoneMail /> Login with Email
       </button>
       <button className="btn facebook-btn w-100">
         <FaFacebook /> Login with Facebook
@@ -55,11 +56,11 @@ const SignUp = () => {
 {/* Register Form */}
 <div className="col-12 col-md-5">
   <div className="card p-4 shadow-lg">
-    <h2 className="text-center">Register</h2>
+    <h2 className="text-center">Sign Up</h2>
     <p className="text-center mb-4" style={{color:'#92949F'}}>Please Enter your detail to Sign Up.</p>
-    <div className="d-flex justify-content-center mb-3">
-      <button className="btn google-btn me-2 w-100">
-        <FaGoogle /> Login with Google
+    <div className="d-flex justify-content-center  mb-3">
+      <button className="btn google-btn me-2  w-100">
+      <AiTwotoneMail className='' />Login with Email
       </button>
       <button className="btn facebook-btn w-100">
         <FaFacebook /> Login with Facebook
