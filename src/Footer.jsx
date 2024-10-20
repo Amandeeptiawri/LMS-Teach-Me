@@ -96,7 +96,7 @@ const Footer = () => {
        <hr></hr>
          <p className="text-center text-white">
            &copy; 2024 All Rights Copyright <span className="text-warning">TeachMe</span>. Design & Developed By{" "}
-           <span className="text-warning">UIPARADOX</span>
+           <span className="text-warning">AMAN DEEP</span>
          </p>
        </div>
        
